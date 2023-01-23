@@ -1,0 +1,240 @@
+@charset "UTF-8";
+
+/*
+Theme Name: Caioba
+Author: Ypb Marketing Digital
+Author URI: http://www.ypb.com.br/
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background:#feb100;
+}
+
+a, p{
+    color:#101820;    
+}
+
+p{
+    line-height:20px;
+    margin-bottom:0;
+}
+
+img{
+    max-width:100%;
+}
+
+header{    
+    height:500px;
+}
+
+header p{
+    font-size:16px;
+    color:#101820;
+    line-height:20px;
+    padding:20px 0 0 0;
+}
+
+/*Sections*/
+section.escolha{
+/*     background:url('img/section-escolha.png') no-repeat; */
+/*     height:375px; */
+/*     background-size: cover; */
+    margin-top: -148px;
+    position:relative;
+}
+section.eventos{
+    background:#101820;
+    padding:100px 0 50px 0;
+}
+section.jogar-juntos .bg-light{
+    background:#dde5ed !important;
+}
+section.jogar-juntos p{
+    color:#101820;
+}
+
+/*Buttons*/
+.btn-dark{
+    color:#f4af23;
+    background:#101820;
+    border-radius: 20px;
+    width: 200px;
+    max-width: 100%;
+}
+
+.btn-light{
+	border-radius: 20px;
+    width: 200px;
+    max-width: 100%;
+	margin:0 10px;
+}
+
+.btn-danger{
+	border-radius: 20px;
+    width: 200px;
+    max-width: 100%
+}
+
+.btn-danger.trash{
+	border-radius: 5px;
+    width: 100%;
+}
+
+/*Utilities*/
+.margin-border{
+    margin-top: -30px;
+}
+
+/*Modal & Form*/
+.modal-content{
+	border-radius:0;
+}
+.form-outline .form-control{
+	 border: 1px solid #d3d3d3;
+}
+.modal-header {
+    background: #f4af23;
+	color:#101820;
+}
+.form-outline {
+    margin-bottom: 20px;
+}
+
+#hospede2, #hospede2-2,
+#hospede3, #hospede3-3,
+#hospede4, #hospede4-4,
+#hospede5, #hospede5-5,
+.campo3, .campo3-3,
+a#trash3, a#trash3-3,
+.campo4, .campo4-4,
+.campo5, .campo5-5,
+#finalizar,
+#evento1-esgotado, #evento2-esgotado{
+	display:none;
+}
+
+.step-app>.step-steps>li.active {
+    background-color: #101820 !important;
+}
+.step-app>.step-steps>li.done {
+    background-color: #101820 !important;
+}
+.step-app>.step-footer{
+    text-align:right;
+}
+.wpcf7-date{
+    opacity:1 !important;
+}
+
+.wpcf7 form.sent .wpcf7-response-output{
+	position: absolute;
+    padding: 50px 35px;
+    top: -72px;
+    bottom: -33px;
+    background: #00b74a;
+    left: -16px;
+    right: -15px;
+    font-size: 37px;
+    text-align: center;
+    color: #fff;
+    align-items: center;
+    display: flex;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output{
+	color: #f00;
+    font-weight: 600;
+	border-color: #f00 !important;
+	color: #f00;
+    font-weight: 600;
+    text-align: center;
+    font-size: 17px;
+}
+
+.privacity p{
+	padding-bottom:10px
+}
+
+/*Footer*/
+footer a{
+    padding:0 3px;
+}
+.copyright{
+    background:#151515;
+}
+.copyright .ypb{
+    font-size:12px;
+}
+footer.offset-md-3 {
+    margin-left: 35%;
+}
+/* 
+@media screen and (min-width: 1900px){
+	section.escolha{
+		height: 525px !important;
+		margin-top: -190px !important;
+	}
+} */
+
+/* @media screen and (min-width: 1500px){
+    section.escolha{
+		margin-top: -160px !important;
+	}
+} */
+
+/* @media screen and (min-width: 1345px){
+    section.escolha{
+		margin-top:-200px;
+	}
+	section.escolha .col-md-6{
+		padding: 0 40px;
+	}
+} */
+
+/* @media screen and (min-width: 1366px){
+    section.escolha{
+		height: 450px;
+		margin-top:-225px;
+	}
+} */
+
+@media screen and (max-width: 900px){
+    header .col-md-8{
+        display:none;
+    }
+    .top-area{
+        margin-bottom:30px;
+    }
+    section.escolha{
+        height:auto;
+        margin-top: -80px;
+    }
+/*     section.escolha .col-md-8{
+        padding: 25px;
+        margin-bottom: 60px;
+    }
+    section.eventos{
+        margin-top: -60px;
+        position: relative;
+    } */
+    section.eventos .p-5{
+        padding: 3rem 2px !important;
+    }
+    footer .col-md-7{
+        padding-top:15px;
+    }
+    .row{
+        --mdb-gutter-x: inherit;
+    }
+	.btn-dark, .btn-light{
+		width:150px;
+	}
+}
